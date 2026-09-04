@@ -1,4 +1,4 @@
-# Mark Anthony Gabo — Personal Website
+# Mark Anthony Gabo | Personal Website
 
 A single-page personal site: hero, about, experience, education, skills, leadership & service, and contact.
 
