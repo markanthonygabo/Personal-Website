@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — Mark Anthony Gabo</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .legal-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(48px, 8vw, 96px) var(--gutter) 120px;
+  }
+  .legal-wrap h1 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 8px; }
+  .legal-updated { color: var(--grey-dim); font-size: 13.5px; margin-bottom: 40px; }
+  .legal-wrap h2 { font-size: 19px; margin: 36px 0 12px; }
+  .legal-wrap p, .legal-wrap li { color: var(--grey); font-size: 15.5px; line-height: 1.7; }
+  .legal-wrap ul { padding-left: 20px; margin: 0 0 1em; }
+  .legal-wrap a { color: var(--red-bright); text-decoration: underline; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 48px; font-size: 14.5px; color: var(--red-bright); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Mark Anthony Gabo</a>
+  </div>
+</header>
+
+<main class="legal-wrap">
+  <h1>Terms of Use</h1>
+  <p class="legal-updated">Last updated: September 2026</p>
+
+  <p>This is a personal portfolio site. By using it, you're agreeing to the following, kept short on purpose.</p>
+
+  <h2>What this site is</h2>
+  <p>A personal, non-commercial portfolio sharing my professional background, education, credentials, and work. Nothing here is offered as legal, financial, or professional advice.</p>
+
+  <h2>Content ownership</h2>
+  <p>The text, photos, and design on this site are mine unless otherwise noted. Certification and employer logos shown belong to their respective organizations and are used to represent credentials I've earned or roles I've held, not to imply endorsement.</p>
+
+  <h2>Accuracy</h2>
+  <p>I keep this site reasonably up to date, but job titles, dates, and credentials can change faster than a website does. If something looks out of date, feel free to ask me directly.</p>
+
+  <h2>External links</h2>
+  <p>Links to LinkedIn, GitHub, my credential wallet, and similar third-party sites are provided for convenience. I'm not responsible for the content or availability of sites I don't control.</p>
+
+  <h2>No warranty</h2>
+  <p>This site is provided as-is. I've done my best to keep it working smoothly across devices, but I can't guarantee it will be error-free or available at all times.</p>
+
+  <h2>Changes</h2>
+  <p>I may update these terms as the site evolves. Continued use after a change means you accept the update.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about these terms are welcome through the contact button on the homepage.</p>
+
+  <a href="index.html" class="back-link">← Back to the homepage</a>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Mark Anthony Gabo. <a href="privacy.html" style="color:inherit;">Privacy</a> · <a href="terms.html" style="color:inherit;">Terms</a></p>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
