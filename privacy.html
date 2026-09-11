@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+  (function () {
+    var saved = localStorage.getItem("theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Mark Anthony Gabo</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .legal-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(48px, 8vw, 96px) var(--gutter) 120px;
+  }
+  .legal-wrap h1 { font-size: clamp(28px, 4vw, 40px); margin-bottom: 8px; }
+  .legal-updated { color: var(--grey-dim); font-size: 13.5px; margin-bottom: 40px; }
+  .legal-wrap h2 { font-size: 19px; margin: 36px 0 12px; }
+  .legal-wrap p, .legal-wrap li { color: var(--grey); font-size: 15.5px; line-height: 1.7; }
+  .legal-wrap ul { padding-left: 20px; margin: 0 0 1em; }
+  .legal-wrap a { color: var(--red-bright); text-decoration: underline; }
+  .back-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 48px; font-size: 14.5px; color: var(--red-bright); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Mark Anthony Gabo</a>
+  </div>
+</header>
+
+<main class="legal-wrap">
+  <h1>Privacy Policy</h1>
+  <p class="legal-updated">Last updated: September 2026</p>
+
+  <p>This site is my personal portfolio. I don't run advertising and I don't sell or share any information about you. Here's exactly what happens when you visit.</p>
+
+  <h2>Analytics</h2>
+  <p>I use Google Analytics to understand how many people visit this site and which pages they read. Google Analytics uses cookies and collects information like your approximate location (city/country level), device type, browser, and which pages you viewed. This data is aggregated and anonymized, I can't identify you personally from it.</p>
+  <p>You'll see a cookie banner on your first visit. Analytics only loads after you accept it. You can decline, and the site will work exactly the same way.</p>
+  <p>You can read Google's own privacy policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+  <h2>The contact form</h2>
+  <p>The "Get in touch" and "Compose a message" buttons open your own email app with a message pre-filled, addressed to me. Nothing you type is stored, sent to, or seen by anyone other than you until you personally hit send from your own email account. This site has no backend server and doesn't store form submissions anywhere.</p>
+
+  <h2>Cookies</h2>
+  <p>Aside from the optional analytics cookies described above, this site doesn't set any cookies of its own.</p>
+
+  <h2>Third-party links</h2>
+  <p>This site links out to places like LinkedIn, Facebook, Instagram, GitHub, and my Accredible credential wallet. Once you click through, their own privacy policies apply, not mine.</p>
+
+  <h2>Changes</h2>
+  <p>If anything here changes, I'll update this page and adjust the date at the top.</p>
+
+  <h2>Questions</h2>
+  <p>Reach out any time through the contact button on the homepage.</p>
+
+  <a href="index.html" class="back-link">← Back to the homepage</a>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Mark Anthony Gabo. <a href="privacy.html" style="color:inherit;">Privacy</a> · <a href="terms.html" style="color:inherit;">Terms</a></p>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
